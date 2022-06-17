@@ -4363,7 +4363,7 @@ Asabeneh Yetayeh is Finland. He lives Helsinki, 250.
 
 #### Overriding methods
 
-As you can see, we manage to access all the methods in the Person Class and we used it in the Student child class. We can customize the parent methods, we can add additional properties to a child class. If we want to customize, the methods and if we want to add extra properties, we need to use the constructor function the child class too. In side the constructor function we call the super() function to access all the properties from the parent class. The Person class didn't have gender but now let us give gender property for the child class, Student. If the same method name used in the child class, the parent method will be overridden.
+As you can see, we manage to access all the methods in the Person Class and we used it in the Student child class. We can customize the parent methods, we can add additional properties to a child class. If we want to customize the methods and if we want to add extra properties, we need to use the constructor function inside the child class too. Inside the constructor function we call the super() function to access all the properties from the parent class. The Person class didn't have gender but now let us give gender property for the child class, Student. If the same method name used in the child class, the parent method will be overridden.
 
 ```js
 class Student extends Person {
@@ -4410,6 +4410,7 @@ s2.setSkill = 'Managing'
 s2.setSkill = 'Organizing'
 
 console.log(s1)
+console.log(s2)
 
 console.log(s1.saySomething())
 console.log(s1.getFullName())
@@ -4425,11 +4426,9 @@ Student {firstName: "Asabeneh", lastName: "Yetayeh", age: 250, country: "Finlan
 Student {firstName: "Lidiya", lastName: "Tekle", age: 28, country: "Finland", city: "Helsinki", …}
 I am a child of the person class
 Asabeneh Yetayeh
-Student {firstName: "Asabeneh", lastName: "Yetayeh", age: 250, country: "Finland", city: "Helsinki", …}
 Asabeneh Yetayeh is 250. He lives in Helsinki, Finland. He knows HTML, CSS and JavaScript
 I am a child of the person class
 Lidiya Tekle
-Student {firstName: "Lidiya", lastName: "Tekle", age: 28, country: "Finland", city: "Helsinki", …}
 Lidiya Tekle is 28. She lives in Helsinki, Finland. He knows Planning, Managing and Organizing
 ```
 
