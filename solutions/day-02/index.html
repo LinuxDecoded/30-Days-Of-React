@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>React App</title>
+    <style>
+        footer{
+            position: absolute;
+            bottom: 0;
+            text-align: center;
+            width: 100%;
+        }
+        .footer{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="root"></div>
+
+    <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script type="text/babel">
+        const Name = 'Ajay Sharma'
+        const root = document.querySelector('#root')
+        const user = (
+            <div>
+                <h1>{Name}</h1>
+                <p>Gender: Male</p>
+                <p>Country: India</p>
+                <p>Coder for Fun</p>
+                <p>+9198xxxxxxxx</p>
+                <p>hallo</p>
+            </div>
+        )
+
+        const footer = (
+            <footer>
+                <div className="footer">Copyright 2022</div>    
+            </footer>
+        )
+
+        const app = (
+            <div>
+                {user}
+                {footer}    
+            </div>
+        )
+        ReactDOM.render(app, root)
+    </script>
+</body>
+</html>
